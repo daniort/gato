@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ulma.min.css">
+  </head>
+  <body class="container">
+
+
+<div class="container">
+  <div class="notification">
+    <div class="columns is-mobile">
+        <div class="reset" onClick="newGame = new Game(); for(let n = 0; n < document.getElementById('map').children.length; n++)document.getElementById('map').children[n].textContent = ''"> &olarr;</div>
+        <div class="map" id="map">
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(1,1);this.textContent = '0';}else{newGame.clicked(1,0);this.textContent = 'x';};  "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(2,1);this.textContent = '0';}else{newGame.clicked(2,0);this.textContent = 'x';} "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(3,1);this.textContent = '0';}else{newGame.clicked(3,0);this.textContent = 'x';} "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(4,1);this.textContent = '0';}else{newGame.clicked(4,0);this.textContent = 'x';} "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(5,1);this.textContent = '0';}else{newGame.clicked(5,0);this.textContent = 'x';} "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(6,1);this.textContent = '0';}else{newGame.clicked(6,0);this.textContent = 'x';} "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(7,1);this.textContent = '0';}else{newGame.clicked(7,0);this.textContent = 'x';} "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(8,1);this.textContent = '0';}else{newGame.clicked(8,0);this.textContent = 'x';} "></box>
+           <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(9,1);this.textContent = '0';}else{newGame.clicked(9,0);this.textContent = 'x';} "></box>
+        </div>
+      </div>
+      <br>
+        <div id="demo" class="columns is-mobile container">
+            Jugando...
+        </div>
+    </div>
+  </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
