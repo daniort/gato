@@ -43,25 +43,27 @@ box {
 
 .reset {
 	transition: all 0.2s ease-in-out;
-	margin-top: 0px;
-	margin-left: 440px;
+	margin-top: 350px;
+	margin-left: 300px;
 	width: 0px;
 	z-index: 3;
-	color: smoke;
+	color: white;
 	position: absolute;
 	font-size: 80px;
 }
 .reset:hover {
 	transform: scale(1.1);
-	margin-top: 0px;
-	margin-left: 438px;
+	margin-top: 350px;
+	margin-left: 300px;
 	width: 0px;
 	z-index: 3;
-	color: smoke;
+	color: #5f9ea0;
 	position: absolute;
 	font-size: 80px;
+
 }
 #demo{
+  margin-left: 160px;
   font-size: 30px;
   color:white;
 }

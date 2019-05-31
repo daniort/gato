@@ -11,8 +11,11 @@
 
 <div class="container">
   <div class="notification">
-    <div class="columns is-mobile">
+    <div class="container">
         <div class="reset" onClick="newGame = new Game(); for(let n = 0; n < document.getElementById('map').children.length; n++)document.getElementById('map').children[n].textContent = ''"> &olarr;</div>
+        <br>
+    </div>
+    <div class="columns is-mobile">
         <div class="map" id="map">
            <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(1,1);this.textContent = '0';}else{newGame.clicked(1,0);this.textContent = 'x';};  "></box>
            <box onClick="if(this.textContent == '' && newGame.gameOn)if(Number(newGame.history[0].length + newGame.history[1].length) % 2 == 0){newGame.clicked(2,1);this.textContent = '0';}else{newGame.clicked(2,0);this.textContent = 'x';} "></box>
